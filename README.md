@@ -3,7 +3,8 @@ draw images with the help of Fourier series
 
 ## My aim is to make a program to recreate something I saw on the internet
 
-this is a gif I saw on 9gag with the title 'Using epicycles and Fourier series, you can get an amazing automatic drawing generator' \n
+this is a gif I saw on 9gag with the title 
+### 'Using epicycles and Fourier series, you can get an amazing automatic drawing generator'
 ![Alt Text](https://raw.githubusercontent.com/ansnoussi/FourierDraw/master/image.gif)
 
 the title gives away a couple of hints: Epicycles , Fourier Transform
