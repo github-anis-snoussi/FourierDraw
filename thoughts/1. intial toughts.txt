@@ -23,7 +23,8 @@ to guess, it's a way to represent simple frequencies using cercles.
 
 2- when I first saw this gif, I over simplified it by thinking the image will be devivded
 to 2 signals (X axis and Y axis) and then work on each independent one, and maybe that's
-true, but then you notice that the whole drawing is done using one single line, so even if the drawing will be devided to 2 dementions and then work on each, there must be some kind
+true, but then you notice that the whole drawing is done using one single line, so even if
+the drawing will be devided to 2 dementions and then work on each, there must be some kind
 of synchronization between them.
 
 3- choice of language: I don't recall doing any kind of gui before, so I have no idea what
