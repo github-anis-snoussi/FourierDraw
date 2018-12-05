@@ -1,16 +1,11 @@
 //Imports are listed in full to show what's being used
 //could just import javax.swing.* and java.awt.* etc..
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JComboBox;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JList;
-import javax.swing.JFileChooser;
+import javax.swing.*;
 import java.awt.BorderLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import components.*;
+import javax.swing.JTextArea;
 
 
 
@@ -25,38 +20,37 @@ public class GuiApp1 {
      guiFrame.setLocationRelativeTo(null);
 
 
-     final JPanel comboPanel = new JPanel();
-     JFileChooser test = new JFileChooser();
-     comboPanel.add(test);
-
+     final FileChooserDemo2 filePanel = new FileChooserDemo2();
      
+
      final JPanel listPanel = new JPanel();
      listPanel.setVisible(false);
      JLabel listLbl = new JLabel("magic being done...:");
      listPanel.add(listLbl);
 
 
-     JButton vegFruitBut = new JButton("DO MAGIC");
+     JButton fourierBut = new JButton("DO MAGIC");
      //The ActionListener class is used to handle the
      //event that happens when the user clicks the button.
      //As there is not a lot that needs to happen we can
      //define an anonymous inner class to make the code simpler.
-     vegFruitBut.addActionListener(new ActionListener() {
+     fourierBut.addActionListener(new ActionListener() {
       @Override
       public void actionPerformed(ActionEvent event) {
        //When the fruit of veg button is pressed
        //the setVisible value of the listPanel and
        //comboPanel is switched from true to
        //value or vice versa.
-       listPanel.setVisible(!listPanel.isVisible());
-       comboPanel.setVisible(!comboPanel.isVisible());
+       listPanel.setVisible(true);
+       filePanel.setVisible(false);
+       guiFrame.remove(fourierBut);
       }
      });
      //The JFrame uses the BorderLayout layout manager.
      //Put the two JPanels and JButton in different areas.
-     guiFrame.add(comboPanel, BorderLayout.NORTH);
+     guiFrame.add(filePanel, BorderLayout.NORTH);
      guiFrame.add(listPanel, BorderLayout.CENTER);
-     guiFrame.add(vegFruitBut, BorderLayout.SOUTH);
+     guiFrame.add(fourierBut, BorderLayout.SOUTH);
 
 
      
