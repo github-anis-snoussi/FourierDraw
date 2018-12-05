@@ -6,9 +6,11 @@ import javax.swing.JComboBox;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JList;
+import javax.swing.JFileChooser;
 import java.awt.BorderLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import components.*;
 
 
 
@@ -17,58 +19,24 @@ public class GuiApp1 {
    
     public GuiApp1() {
      JFrame guiFrame = new JFrame();
-     //make sure the program exits when the frame closes
      guiFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-     guiFrame.setTitle("Example GUI");
-     guiFrame.setSize(300, 250);
-     //This will center the JFrame in the middle of the screen
+     guiFrame.setTitle("FourierDraw");
+     guiFrame.setSize(600, 500);
      guiFrame.setLocationRelativeTo(null);
-     //Options for the JComboBox
-     String[] fruitOptions = {
-      "Apple",
-      "Apricot",
-      "Banana",
-      "Cherry",
-      "Date",
-      "Kiwi",
-      "Orange",
-      "Pear",
-      "Strawberry"
-     };
-     //Options for the JList
-     String[] vegOptions = {
-      "Asparagus",
-      "Beans",
-      "Broccoli",
-      "Cabbage",
-      "Carrot",
-      "Celery",
-      "Cucumber",
-      "Leek",
-      "Mushroom",
-      "Pepper",
-      "Radish",
-      "Shallot",
-      "Spinach",
-      "Swede",
-      "Turnip"
-     };
-     //The first JPanel contains a JLabel and JCombobox
+
+
      final JPanel comboPanel = new JPanel();
-     JLabel comboLbl = new JLabel("Fruits:");
-     JComboBox fruits = new JComboBox(fruitOptions);
-     comboPanel.add(comboLbl);
-     comboPanel.add(fruits);
-     //Create the second JPanel. Add a JLabel and JList and
-     //make use the JPanel is not visible.
+     JFileChooser test = new JFileChooser();
+     comboPanel.add(test);
+
+     
      final JPanel listPanel = new JPanel();
      listPanel.setVisible(false);
-     JLabel listLbl = new JLabel("Vegetables:");
-     JList vegs = new JList(vegOptions);
-     vegs.setLayoutOrientation(JList.HORIZONTAL_WRAP);
+     JLabel listLbl = new JLabel("magic being done...:");
      listPanel.add(listLbl);
-     listPanel.add(vegs);
-     JButton vegFruitBut = new JButton("Fruit or Veg");
+
+
+     JButton vegFruitBut = new JButton("DO MAGIC");
      //The ActionListener class is used to handle the
      //event that happens when the user clicks the button.
      //As there is not a lot that needs to happen we can
@@ -89,7 +57,10 @@ public class GuiApp1 {
      guiFrame.add(comboPanel, BorderLayout.NORTH);
      guiFrame.add(listPanel, BorderLayout.CENTER);
      guiFrame.add(vegFruitBut, BorderLayout.SOUTH);
-     //make sure the JFrame is visible
+
+
+     
      guiFrame.setVisible(true);
     }
+    
    }
