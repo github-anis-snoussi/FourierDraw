@@ -41,19 +41,23 @@ public class GuiApp1 {
        //the setVisible value of the listPanel and
        //comboPanel is switched from true to
        //value or vice versa.
-       listPanel.setVisible(true);
-       filePanel.setVisible(false);
-       guiFrame.remove(fourierBut);
+        if(filePanel.fileChosen() == true){
+            listPanel.setVisible(true);
+            filePanel.setVisible(false);
+            guiFrame.remove(fourierBut);
+        }
+
       }
      });
      //The JFrame uses the BorderLayout layout manager.
      //Put the two JPanels and JButton in different areas.
-     guiFrame.add(filePanel, BorderLayout.NORTH);
-     guiFrame.add(listPanel, BorderLayout.CENTER);
-     guiFrame.add(fourierBut, BorderLayout.SOUTH);
 
-
+        guiFrame.add(filePanel, BorderLayout.NORTH);
+        guiFrame.add(listPanel, BorderLayout.CENTER);
+        guiFrame.add(fourierBut, BorderLayout.SOUTH);
      
+
+
      guiFrame.setVisible(true);
     }
     
