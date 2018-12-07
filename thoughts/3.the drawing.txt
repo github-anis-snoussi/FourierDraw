@@ -12,3 +12,13 @@ is a continuous periodic path, so we could apply fourier series on it !
 SOOO... we have two periodic composite functions (with the same initial phase) that if we
 had each one running on an axis, and trace the trajectory taken by their intersection, 
 we would get .... A DRAWING
+
+
+was doing some research on the subject and I found this awesome description on reddit about Fourier series and I HAD TO COPY AND PASTE IT
+
+    What does the Fourier Transform do? Given a smoothie, it finds the recipe.
+    How? Run the smoothie through filters to extract each ingredient.
+    Why? Recipes are easier to analyze, compare, and modify than the smoothie itself.
+    How do we get the smoothie back? Blend the ingredients.
+    
+cool  right ?? ! :D

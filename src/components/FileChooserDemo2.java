@@ -81,10 +81,7 @@ public class FileChooserDemo2 extends JPanel
     }
 
     public boolean fileChosen(){
-        int val = fc.showDialog(FileChooserDemo2.this,
-                                      "Attach");
-
-        if (val == JFileChooser.APPROVE_OPTION) {
+        if (fc.getName() != null) {
             return true;
         } else {
             return false;

@@ -1,5 +1,3 @@
-//Imports are listed in full to show what's being used
-//could just import javax.swing.* and java.awt.* etc..
 import javax.swing.*;
 import java.awt.BorderLayout;
 import java.awt.event.ActionListener;
@@ -37,10 +35,7 @@ public class GuiApp1 {
      fourierBut.addActionListener(new ActionListener() {
       @Override
       public void actionPerformed(ActionEvent event) {
-       //When the fruit of veg button is pressed
-       //the setVisible value of the listPanel and
-       //comboPanel is switched from true to
-       //value or vice versa.
+
         if(filePanel.fileChosen() == true){
             listPanel.setVisible(true);
             filePanel.setVisible(false);
