@@ -1,24 +1,23 @@
 import javax.swing.*;
-import java.awt.BorderLayout;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 import components.*;
-import javax.swing.JTextArea;
+import java.io.*;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.filechooser.*;
 
 
+public class GuiApp1 extends JPanel{
 
-public class GuiApp1 {
-
+    private File imageFile ;
    
     public GuiApp1() {
+     
      JFrame guiFrame = new JFrame();
      guiFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
      guiFrame.setTitle("FourierDraw");
      guiFrame.setSize(600, 500);
      guiFrame.setLocationRelativeTo(null);
-
-
-     final FileChooserDemo2 filePanel = new FileChooserDemo2();
      
 
      final JPanel listPanel = new JPanel();
@@ -26,28 +25,40 @@ public class GuiApp1 {
      JLabel listLbl = new JLabel("magic being done...:");
      listPanel.add(listLbl);
 
+     final JPanel welcome = new JPanel();
+     welcome.setVisible(true);
+     JLabel welcomeText = new JLabel("you wanna do magic?");
+     welcome.add(welcomeText);
+
 
      JButton fourierBut = new JButton("DO MAGIC");
-     //The ActionListener class is used to handle the
-     //event that happens when the user clicks the button.
-     //As there is not a lot that needs to happen we can
-     //define an anonymous inner class to make the code simpler.
      fourierBut.addActionListener(new ActionListener() {
       @Override
       public void actionPerformed(ActionEvent event) {
+            JFileChooser fc = new JFileChooser();
+            System.out.println("you clicked !!!!");
+            fc.addChoosableFileFilter(new ImageFilter());
+            fc.setAcceptAllFileFilterUsed(false);
+            fc.setFileView(new ImageFileView());
+            fc.setAccessory(new ImagePreview(fc));
 
-        if(filePanel.fileChosen() == true){
+        int returnVal = fc.showDialog(GuiApp1.this,"Attach");
+        if (returnVal == JFileChooser.APPROVE_OPTION) {
+            System.out.println("YAY! you made a choice ");
+            imageFile = fc.getSelectedFile();
             listPanel.setVisible(true);
-            filePanel.setVisible(false);
+            welcome.setVisible(false);
             guiFrame.remove(fourierBut);
-        }
 
+        }else{
+            System.out.println("you didn't chose a file bruh..");
+        }
+        fc = null ;
+        System.gc();
       }
      });
-     //The JFrame uses the BorderLayout layout manager.
-     //Put the two JPanels and JButton in different areas.
 
-        guiFrame.add(filePanel, BorderLayout.NORTH);
+        guiFrame.add(welcome, BorderLayout.NORTH);
         guiFrame.add(listPanel, BorderLayout.CENTER);
         guiFrame.add(fourierBut, BorderLayout.SOUTH);
      
