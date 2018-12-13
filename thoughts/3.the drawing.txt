@@ -14,7 +14,8 @@ had each one running on an axis, and trace the trajectory taken by their interse
 we would get .... A DRAWING
 
 
-was doing some research on the subject and I found this awesome description on reddit about Fourier series and I HAD TO COPY AND PASTE IT
+was doing some research on the subject and I found this awesome description on reddit about
+Fourier series and I HAD TO COPY AND PASTE IT
 
     What does the Fourier Transform do? Given a smoothie, it finds the recipe.
     How? Run the smoothie through filters to extract each ingredient.
@@ -22,3 +23,6 @@ was doing some research on the subject and I found this awesome description on r
     How do we get the smoothie back? Blend the ingredients.
     
 cool  right ?? ! :D
+
+
+
