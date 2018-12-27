@@ -32,4 +32,10 @@ link fot the video: https://www.youtube.com/watch?v=pKyU92cza0Y
 
 so now, after all these happy coincidences, I think I will make this project using the p5js
 and that way I get to learn a new language during this small project! :)
-
+-------------------------------------------------------------------------------------------
+since I started this project in JAVA, I thinks it's best if I continue it with JAVA
+but the the path that I chose to make this into a GUI, turns out to be old and there are many
+powerfull ways to do this, one of which is processing, which is a programming environment built
+on top of JAVA, and the good thing about it that it's very similar to P5js in a sense that
+it is used during alot of videos in the coding Train youtube channel and it has two main functions
+to do the work: setup() and draw()
