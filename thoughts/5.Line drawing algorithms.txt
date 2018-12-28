@@ -18,3 +18,8 @@ https://en.wikipedia.org/wiki/Digital_differential_analyzer_(graphics_algorithm)
 Gupta-Sproull algorithm:
 nothing on wikipedia yet (maybe chose this algorithm and then post about on wikipedia? ;) )
 
+--------------------------------------------------------------------------------
+
+also, I think it's best to take a look at edge detection algorithms as well:
+
+https://en.wikipedia.org/wiki/Edge_detection
