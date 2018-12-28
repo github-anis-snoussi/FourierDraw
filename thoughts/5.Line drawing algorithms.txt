@@ -1,0 +1,20 @@
+first I have to turn images into closed curves, so I can apply the Fourier
+transform, for that I took a quick look at known Line drawing algorithms found
+on wikipedia, and here are some of them:
+
+
+A naive line-drawing algorithm:
+https://en.wikipedia.org/wiki/Line_drawing_algorithm
+
+Xiaolin Wu's line algorithm:
+https://en.wikipedia.org/wiki/Xiaolin_Wu%27s_line_algorithm
+
+Bresenham's line algorithm:
+https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm
+
+Digital differential analyzer:
+https://en.wikipedia.org/wiki/Digital_differential_analyzer_(graphics_algorithm)
+
+Gupta-Sproull algorithm:
+nothing on wikipedia yet (maybe chose this algorithm and then post about on wikipedia? ;) )
+
