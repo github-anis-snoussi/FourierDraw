@@ -22,6 +22,7 @@ Fourier series and I HAD TO COPY AND PASTE IT
     Why? Recipes are easier to analyze, compare, and modify than the smoothie itself.
     How do we get the smoothie back? Blend the ingredients.
     
+this is speaking about Fourier Transform, but it's almost the same for fourier series.
 cool  right ?? ! :D
 
 

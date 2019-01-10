@@ -1,5 +1,5 @@
 first I have to turn images into closed curves, so I can apply the Fourier
-transform, for that I took a quick look at known Line drawing algorithms found
+Series, for that I took a quick look at known Line drawing algorithms found
 on wikipedia, and here are some of them:
 
 
