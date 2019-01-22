@@ -23,3 +23,16 @@ nothing on wikipedia yet (maybe chose this algorithm and then post about on wiki
 also, I think it's best to take a look at edge detection algorithms as well:
 
 https://en.wikipedia.org/wiki/Edge_detection
+
+--------------------------------------------------------------------------------
+
+I simply think that I'm the luckiest person alive! (or being spied on) 
+Just as I started doing this simple project, so many creative and awesome people
+on the internet started a similar topics: for example the coding train youtube 
+channel which made the exact same thing I wanted to do with p5js,
+so what I did was to write the same code shown in the live stream because its's
+so satisfying.
+
+what I'm thinking about right now is to update the README.md file with all the 
+AMAZING work I found on the internet while I was doing my research and I'll call
+it a day.
